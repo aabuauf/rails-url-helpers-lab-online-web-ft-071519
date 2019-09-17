@@ -22,7 +22,7 @@ class StudentsController < ApplicationController
       @student.active = false
     end
       @student.save
-    render "show.html.erb"
+    redirect_to "/student/#{@student.id}"
   end
   
   private
