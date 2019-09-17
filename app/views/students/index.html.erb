@@ -1,6 +1,6 @@
 <div>
   <% @students.each do |student| %>
     <div><%= student.first_name + " " + student.last_name %></div>
-    <div><%= link_to student.to_s, "/student/#{student.id}" %></div>
+    <div><%= link_to student.to_s, "/students/#{student.id}" %></div>
   <% end %>
 </div>
